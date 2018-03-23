@@ -1,0 +1,39 @@
+{
+  "private": true,
+  "name": "pwa",
+  "scripts": {
+    "precommit": "lint-staged",
+    "flow": "flow",
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna run --parallel clean && rm -rf ./node_modules && lerna clean --yes",
+    "dev": "lerna run --parallel dev"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add",
+      "eslint"
+    ]
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "babel-plugin-emotion": "^9.0.1",
+    "eslint": "^4.19.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-async-await": "^0.0.0",
+    "eslint-plugin-flowtype": "^2.46.1",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "flow-bin": "^0.68.0",
+    "husky": "^0.14.3",
+    "lerna": "^2.9.0",
+    "lint-staged": "^7.0.0",
+    "prettier": "^1.11.1"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
