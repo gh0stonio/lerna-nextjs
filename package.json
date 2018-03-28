@@ -9,11 +9,7 @@
     "dev": "lerna run --parallel dev"
   },
   "lint-staged": {
-    "*.js": [
-      "prettier --write",
-      "git add",
-      "eslint"
-    ]
+    "*.js": ["prettier --write", "git add", "eslint"]
   },
   "devDependencies": {
     "babel-eslint": "^8.2.2",
@@ -33,7 +29,5 @@
     "lint-staged": "^7.0.0",
     "prettier": "^1.11.1"
   },
-  "workspaces": [
-    "packages/*"
-  ]
+  "workspaces": ["packages/*"]
 }
