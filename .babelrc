@@ -1,0 +1,12 @@
+{
+  "env": {
+    "production": {
+      "plugins": [["emotion", { "sourceMap": false, "hoist": true, "autoLabel": true }]]
+    },
+    "development": {
+      "plugins": [["emotion", { "sourceMap": true, "hoist": false, "autoLabel": true }]]
+    }
+  },
+  "presets": ["next/babel"],
+  "plugins": ["transform-flow-strip-types"]
+}
