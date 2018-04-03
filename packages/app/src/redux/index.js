@@ -2,7 +2,7 @@
 import { createStore, applyMiddleware } from 'redux'
 import createSagaMiddleware from 'redux-saga'
 
-import rootReducer from './modules'
+import makeRootReducer from './modules'
 import rootSaga from '../sagas/root.saga'
 
 const enhancer = middleware => {
@@ -13,9 +13,9 @@ const enhancer = middleware => {
   return applyMiddleware(...middleware)
 }
 
-export default () => {
+const create = () => {
   const sagaMiddleware = createSagaMiddleware()
-  const store = Object.assign({}, createStore(rootReducer, enhancer([sagaMiddleware])))
+  const store = Object.assign({}, createStore(makeRootReducer(), enhancer([sagaMiddleware])))
 
   store.runSagaTask = (saga = rootSaga) => {
     const sagaTask = sagaMiddleware.run(saga)
@@ -27,3 +27,5 @@ export default () => {
 
   return store
 }
+
+export const store = create()

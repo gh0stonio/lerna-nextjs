@@ -1,8 +1,18 @@
 // @flow
 import React, { PureComponent } from 'react'
+import AboutReducer from '../redux/modules/about'
+import withReduxSaga from '../decorators/ReduxSaga'
 
-export default class Contact extends PureComponent<*> {
+type Props = {
+  text: string
+}
+
+class About extends PureComponent<Props> {
   render() {
-    return <div>About us</div>
+    return <div>{this.props.text}</div>
   }
 }
+
+export default withReduxSaga({ about: AboutReducer }, ({ about }) => ({
+  text: about.text
+}))(About)
