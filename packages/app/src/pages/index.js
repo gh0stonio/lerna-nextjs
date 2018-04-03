@@ -2,13 +2,14 @@
 import React, { PureComponent, Fragment } from 'react'
 import styled from 'react-emotion'
 import { Link } from '../routes'
+import withReduxSaga from '../decorators/ReduxSaga'
 
 const LinkContent = styled.a`
   text-decoration: none;
   color: red;
 `
 
-export default class Contact extends PureComponent<*> {
+class Home extends PureComponent<*> {
   render() {
     return (
       <Fragment>
@@ -22,3 +23,5 @@ export default class Contact extends PureComponent<*> {
     )
   }
 }
+
+export default withReduxSaga()(Home)
