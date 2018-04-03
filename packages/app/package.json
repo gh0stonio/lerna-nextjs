@@ -10,20 +10,16 @@
     "start": "NODE_ENV=production node src/server.js"
   },
   "dependencies": {
+    "@pwa/core": "0.0.1",
+    "@pwa/example": "0.0.1",
     "emotion": "^9.1.0",
     "emotion-server": "^9.1.0",
     "express": "^4.16.3",
-    "lodash": "^4.17.5",
     "next": "^5.1.0",
-    "next-redux-saga": "^2.0.1",
-    "next-redux-wrapper": "^1.3.5",
     "next-routes": "^1.3.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-emotion": "^9.1.0",
-    "react-redux": "^5.0.7",
-    "redux": "^3.7.2",
-    "redux-saga": "^0.16.0"
+    "react-emotion": "^9.1.0"
   },
   "devDependencies": {
     "redux-devtools-extension": "^2.13.2"

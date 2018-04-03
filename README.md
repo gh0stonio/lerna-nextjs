@@ -18,6 +18,8 @@ You should be able to access the app [here](localhost:3000)
 
 This repository is a monorepo that we manage using [Lerna](https://github.com/lerna/lerna). That means that we actually publish [several packages](/packages) to npm from the same codebase, including:
 
-| Package                | Description |
-| ---------------------- | ----------- |
-| [`app`](/packages/app) | Next.js app |
+| Package                        | Description                   |
+| ------------------------------ | ----------------------------- |
+| [`app`](/packages/app)         | Next.js app                   |
+| [`core`](/packages/core)       | Core of app for shared code   |
+| [`example`](/packages/example) | Example of a package codebase |

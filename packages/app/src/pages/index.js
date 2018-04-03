@@ -1,8 +1,8 @@
 // @flow
+import { Decorators } from '@pwa/core'
 import React, { PureComponent, Fragment } from 'react'
 import styled from 'react-emotion'
 import { Link } from '../routes'
-import withReduxSaga from '../decorators/ReduxSaga'
 
 const LinkContent = styled.a`
   text-decoration: none;
@@ -24,4 +24,4 @@ class Home extends PureComponent<*> {
   }
 }
 
-export default withReduxSaga()(Home)
+export default Decorators.withReduxSaga()(Home)
