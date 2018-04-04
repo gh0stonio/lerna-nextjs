@@ -1,6 +1,6 @@
 const routes = require('next-routes')()
 
 routes.add('contact', '/contact')
-routes.add('about', '/about-us')
+routes.add({ name: 'about', pattern: '/example/about-us', page: 'example/about' })
 
 module.exports = routes
