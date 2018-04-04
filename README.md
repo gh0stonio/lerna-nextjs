@@ -23,3 +23,11 @@ This repository is a monorepo that we manage using [Lerna](https://github.com/le
 | [`app`](/packages/app)         | Next.js app                   |
 | [`core`](/packages/core)       | Core of app for shared code   |
 | [`example`](/packages/example) | Example of a package codebase |
+
+## Testing
+
+In each packages, the testing rule is quite simple. All files within specific folders need to be tested with a 100% coverage.
+
+The folders are `redux`, `sagas`, `selectors` and `utils`.
+
+You can run the tests with the following command `yarn test:unit` and in order to check the coverage `yarn test:unit:coverage`.

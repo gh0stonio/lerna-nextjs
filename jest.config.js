@@ -1,5 +1,11 @@
 module.exports = {
-  collectCoverageFrom: ['packages/**/*.js'],
+  collectCoverageFrom: [
+    'packages/**/src/redux/**/*.js',
+    '!packages/**/src/redux/index.js',
+    'packages/**/src/sagas/**/*.js',
+    'packages/**/src/selectors/**/*.js',
+    'packages/**/src/utils/**/*.js'
+  ],
   coverageThreshold: {
     global: {
       statements: 100,

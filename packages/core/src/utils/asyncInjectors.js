@@ -17,8 +17,8 @@ class AsyncInjectors {
 
   injectSagas(store: Store, asyncSagas: AsyncSagas) {
     if (!isArray(asyncSagas.sagas))
-      console.warn('injectAsyncSagas: Expected `sagas` to be an array of generator functions')
-    if (isEmpty(asyncSagas.sagas)) console.warn('injectAsyncSagas: Received an empty `sagas` array')
+      throw new Error('injectAsyncSagas: Expected `sagas` to be an array of generator functions')
+    if (isEmpty(asyncSagas.sagas)) throw new Error('injectAsyncSagas: Received an empty `sagas` array')
 
     // check if the key already exists
     if (!this._sagasFactory[asyncSagas.key]) {

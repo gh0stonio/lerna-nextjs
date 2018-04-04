@@ -13,6 +13,7 @@
     "react-dom": "^16.2.0",
     "recompose": "^0.26.0",
     "redux": "^3.7.2",
-    "redux-saga": "^0.16.0"
+    "redux-saga": "^0.16.0",
+    "redux-saga-test-plan": "^3.6.0"
   }
 }
