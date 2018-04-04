@@ -6,7 +6,9 @@
     "flow": "flow",
     "bootstrap": "lerna bootstrap",
     "clean": "rimraf packages/app/build && lerna clean --yes && rimraf ./node_modules",
-    "dev": "lerna run --parallel dev"
+    "dev": "lerna run --parallel dev",
+    "test:unit": "jest",
+    "test:unit:coverage": "jest --coverage"
   },
   "lint-staged": {
     "*.js": ["prettier --write", "git add", "eslint"]
@@ -25,6 +27,7 @@
     "eslint-plugin-react": "^7.7.0",
     "flow-bin": "^0.68.0",
     "husky": "^0.14.3",
+    "jest": "^22.4.3",
     "lerna": "^2.9.0",
     "lint-staged": "^7.0.0",
     "prettier": "^1.11.1",

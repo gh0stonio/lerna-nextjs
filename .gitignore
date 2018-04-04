@@ -1,6 +1,7 @@
 .DS_STORE
 
 /node_modules
+/coverage
 
 /packages/*/build/
 /packages/*/coverage/
