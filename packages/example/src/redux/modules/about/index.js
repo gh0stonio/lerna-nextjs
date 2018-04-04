@@ -5,7 +5,7 @@ import * as Types from './types'
 const UPDATE_TEXT: Types.UpdateTextConstant = 'UPDATE_TEXT'
 
 // STATE
-const initialState: Types.State = {
+export const initialState: Types.State = {
   text: 'About us'
 }
 

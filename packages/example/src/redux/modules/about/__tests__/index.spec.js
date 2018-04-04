@@ -1,7 +1,18 @@
-function sum(a, b) {
-  return a + b
-}
+import reducer, * as source from '..'
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(sum(1, 2)).toBe(3)
+it('should return the initial state', () => {
+  expect(reducer(undefined, {})).toEqual(source.initialState)
+})
+
+it('should handle UPDATE_TEXT', () => {
+  const mockText = 'foo'
+  const action = source.updateFoo(mockText)
+
+  const state = source.initialState
+  const expectedState = {
+    ...state,
+    text: mockText
+  }
+
+  expect(reducer(state, action)).toEqual(expectedState)
 })

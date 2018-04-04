@@ -2,7 +2,7 @@
 import * as Types from './types'
 
 // STATE
-const initialState: Types.State = {
+export const initialState: Types.State = {
   foo: 'bar'
 }
 

@@ -1,7 +1,5 @@
-function sum(a, b) {
-  return a + b
-}
+import reducer, * as source from '..'
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(sum(1, 2)).toBe(3)
+it('should return the initial state', () => {
+  expect(reducer(undefined, {})).toEqual(source.initialState)
 })
