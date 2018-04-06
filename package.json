@@ -5,7 +5,7 @@
     "precommit": "lint-staged",
     "flow": "flow",
     "bootstrap": "lerna bootstrap",
-    "clean": "rimraf packages/app/build && lerna clean --yes && rimraf ./node_modules",
+    "clean": "rimraf packages/app/build && rimraf coverage && lerna clean --yes && rimraf ./node_modules",
     "dev": "lerna run --parallel dev",
     "test:unit": "jest",
     "test:unit:coverage": "jest --coverage"
