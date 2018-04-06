@@ -1,7 +1,7 @@
 // @flow
 import type { Saga } from 'redux-saga'
 import { fork, put } from 'redux-saga/effects'
-import { updateFoo } from '../redux/modules/about'
+import { updateFoo } from '../../redux/about'
 
 export function* fakeEvent(): Saga<*> {
   yield put(updateFoo('Working !'))

@@ -1,5 +1,5 @@
-import reducer from '..'
-import global, { initialState as globalInitialState } from '../global'
+import reducer from '.'
+import global, { initialState as globalInitialState } from './global'
 
 describe('Redux', () => {
   it('should return the combined reducers initial state (without asyncReducers)', () => {

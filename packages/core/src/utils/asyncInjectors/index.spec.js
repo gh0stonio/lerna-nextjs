@@ -1,6 +1,6 @@
 /* eslint no-underscore-dangle: 0 */
 /* eslint no-empty-function: 0 */
-import { asyncInjectors } from '../asyncInjectors'
+import { asyncInjectors } from '.'
 
 describe('injectReducer', () => {
   it('should replace the store reducer', () => {

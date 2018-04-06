@@ -5,7 +5,7 @@ import nextReduxSaga from 'next-redux-saga'
 import { asyncInjectors } from '../utils/asyncInjectors'
 
 import type { AsyncReducer, AsyncSagas } from '../types/redux'
-import { store } from '../redux'
+import { store } from '../redux/store'
 
 const withReduxSaga = (asyncReducer?: AsyncReducer, asyncSagas?: AsyncSagas, ...connectArgs: Array<any>) => (
   ComposedComponent: React.ComponentType<*>

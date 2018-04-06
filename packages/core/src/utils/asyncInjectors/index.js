@@ -1,8 +1,8 @@
 // @flow
 import { isArray, isEmpty, some } from 'lodash'
 
-import type { Store, AsyncReducer, AsyncSagas } from '../types/redux'
-import makeRootReducer from '../redux/modules'
+import type { Store, AsyncReducer, AsyncSagas } from '../../types/redux'
+import makeRootReducer from '../../redux'
 
 class AsyncInjectors {
   _sagasFactory: Object

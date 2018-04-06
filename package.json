@@ -2,7 +2,7 @@
   "private": true,
   "name": "pwa",
   "scripts": {
-    "precommit": "lint-staged",
+    "precommit": "lint-staged && flow",
     "flow": "flow",
     "bootstrap": "lerna bootstrap",
     "clean": "rimraf packages/app/build && rimraf coverage && lerna clean --yes && rimraf ./node_modules",

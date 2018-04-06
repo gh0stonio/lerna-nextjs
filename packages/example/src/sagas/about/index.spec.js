@@ -1,7 +1,7 @@
 import { testSaga } from 'redux-saga-test-plan'
 
-import watchAbout, { fakeEvent } from '../about.saga'
-import { updateFoo } from '../../redux/modules/about'
+import watchAbout, { fakeEvent } from '.'
+import { updateFoo } from '../../redux/about'
 
 describe('watchAbout', () => {
   it('should yield effects in the right order', () => {
