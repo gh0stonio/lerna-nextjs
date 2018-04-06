@@ -31,3 +31,7 @@ In each packages, the testing rule is quite simple. All files within specific fo
 The folders are `redux`, `sagas`, `selectors` and `utils`.
 
 You can run the tests with the following command `yarn test:unit` and in order to check the coverage `yarn test:unit:coverage`.
+
+## Typing
+
+All the files need to be typed. We use <b>Flow</b> in this project.
