@@ -12,6 +12,7 @@
   "dependencies": {
     "@pwa/core": "0.0.1",
     "@pwa/example": "0.0.1",
+    "compression": "^1.7.2",
     "emotion": "^9.1.0",
     "emotion-server": "^9.1.0",
     "express": "^4.16.3",

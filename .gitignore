@@ -3,6 +3,7 @@
 /node_modules
 /coverage
 
+/packages/**/*/.next/
 /packages/*/build/
 /packages/*/coverage/
 /packages/*/node_modules/

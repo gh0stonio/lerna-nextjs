@@ -3,9 +3,11 @@
   "name": "pwa",
   "scripts": {
     "precommit": "lint-staged && flow",
+    "build": "lerna run build --stream --scope @pwa/app",
+    "start": "lerna run start --stream --scope @pwa/app",
     "flow": "flow",
     "bootstrap": "lerna bootstrap",
-    "clean": "rimraf packages/app/build && rimraf coverage && lerna clean --yes && rimraf ./node_modules",
+    "clean": "rimraf packages/app/src/.next && rimraf coverage && lerna clean --yes && rimraf ./node_modules",
     "dev": "lerna run --parallel dev",
     "test:unit": "jest",
     "test:unit:coverage": "jest --coverage"

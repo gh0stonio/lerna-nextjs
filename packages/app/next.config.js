@@ -2,7 +2,6 @@ const includes = new RegExp(`@pwa/.*(?!.*node_modules)`)
 const excludes = new RegExp(`node_modules(?!/@pwa/.*(?!.*node_modules))`)
 
 module.exports = {
-  distDir: '../build',
   webpack(config, options) {
     const enhancedConfig = config
 
